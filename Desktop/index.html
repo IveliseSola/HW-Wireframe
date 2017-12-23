@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+    var user = prompt("Chose an option: p, s ,r");
+    var psr = ["p","s","r"];
+    var computer = Math.floor(Math.random()* psr.length;
+    var userWin = 0;
+    var computerWin = 0;
+
+    /* loop */
+    for (var i = 0; i < 3; i++){
+
+/* switch statement*/
+
+/* case: user that choose p */
+       if (user === "p" && computer === "s") {
+           alert("You loose");
+           computerWin++;
+       } else if (user === "p" && computer === "r"){
+           alert("you win");
+           userWin++;
+       } else {
+           alert("you are tie");
+           userWin++;
+           computerWin++;
+       }
+/* case: user that choose s*/
+       if (user === "s" && computer === "p"){
+           alert("you win");
+           userWin ++;
+       } else if(user === "s" && computer === "r"){
+           alert("you loose");
+           computerWin++;
+       } else {
+           alert("you are tie");
+           userWin++;
+           computerWin++;
+       }
+
+/* case: user that choose r */   
+if (user === "r" && computer === "p"){
+           alert("you loose");
+           computerWin++;
+       } else if(user === "r" && computer === "s"){
+           alert("you win");
+           userWin++;
+       } else {
+           alert("you are tie");
+           computerWin++;
+           userWin++;
+       } 
+    
+    }
+    </script>
+    
+</body>
+</html>
