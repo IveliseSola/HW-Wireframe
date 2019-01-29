@@ -1,0 +1,12 @@
+<section class="content-container add-project">
+  <h1 class="title add-project-title">Add New Project</h1>
+  <form class="form" [formGroup]="form">
+    <input class="input-field" placeholder="Project Name" type="text" formControlName="name">
+    <label class="input-label" for="name">Project Name</label>
+    <input class="input-field" placeholder="Description" type="text" formControlName="description">
+    <label class="input-label" for="description">Description</label>
+    <input class="input-field" placeholder="MM-DD-YYYY" type="text" formControlName="deadline">
+    <label class="input-label" for="deadline">Deadline</label>
+    <button class="btn" (click)="emitProject.emit(form.value)">Submit Project</button>
+  </form>
+</section>

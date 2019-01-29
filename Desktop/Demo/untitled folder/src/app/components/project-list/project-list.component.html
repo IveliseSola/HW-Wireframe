@@ -1,0 +1,9 @@
+<div class="content-container project-list">
+    <h1 class="title project-list-title">Projects</h1>
+  <app-detail-card
+    *ngFor="let project of projects"
+    (emitShowDetails)="emitShowDetails.emit($event)"
+    (emitDeleteItem)="emitDeleteItem.emit($event)"
+    [item]="project"
+  ></app-detail-card>
+</div>

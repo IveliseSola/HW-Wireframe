@@ -1,0 +1,18 @@
+<div class="card">
+  <div class="project-card" (click)="emitShowDetails.emit({item: item, editable: false})">
+    <span class="card-info card-name">
+      {{item.name}}
+    </span>
+    <span class="card-info card-name">
+      {{item.deadline}}
+    </span>
+  </div>
+  <div>
+    <i class="material-icons my-icons" (click)="emitShowDetails.emit({item: item, editable: true})">
+      edit
+    </i>
+    <i class="material-icons my-icons" (click)="emitDeleteItem.emit(item)">
+      delete
+    </i>
+  </div>
+</div>

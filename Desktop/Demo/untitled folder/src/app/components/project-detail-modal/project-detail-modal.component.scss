@@ -1,0 +1,23 @@
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.info-container {
+  margin: 10px 0;
+}
+.info-field {
+  border: none;
+  width: 90%;
+  font-size: 18px;
+  margin: 5px;
+  padding: 5px;
+  border-bottom: solid 2px lightblue;
+  word-break: break-word;
+  &:disabled {
+    background-color: lightgray;
+  }
+}
+.input-label {
+  color: black;
+}
